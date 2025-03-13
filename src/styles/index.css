@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #2a9d8f;
+  --secondary-color: #e9c46a;
+  --dark-color: #264653;
+  --light-color: #f1faee;
+  --accent-color: #e76f51;
+  --text-color: #333333;
+  --background-color: #ffffff;
+  --error-color: #d62828;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  min-height: calc(100vh - 160px); /* Account for header and footer */
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Mobile-first approach */
+@media screen and (min-width: 768px) {
+  /* Tablet styles */
+}
+
+@media screen and (min-width: 992px) {
+  /* Desktop styles */
+}
